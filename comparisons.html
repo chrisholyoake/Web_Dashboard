@@ -32,6 +32,12 @@
       margin:2%;
     }
 
+    .comparisons{
+      display: block;
+    }
+    .comparisonBoxes{
+      text-align:center;
+    }
 /*END CUSTOM CSS*/
     .navbar {
       margin-bottom: 0;
@@ -98,27 +104,37 @@
   <!-- BODY BEGINS -->
 <div class="container-fluid">    
   <div class="row content">
-    <div class="col-sm-7 text-left chris-container"> 
-      <h1 style="color:#49796B;"><strong>Summary: Latitude vs X</strong></h1>
-      <img style="float: left; margin:5px;"src="images/Latitude vs Temperature By City.png" width="125px">
-      <p> The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a data set of over 500 cities.<br><br>
-
-        After assembling the dataset, we used Matplotlib to plot various aspects of hte weather vs latitude. Factors that we looked at included: temperature, cloudiness, wind speed, adn humidity. This site provides the source data & visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-      
+    <div class="col-sm-11 text-left chris-container"> 
+      <h1 style="color:#49796B;"><strong>Comparison: Latitude vs X</strong></h1>
+      <p> Click on any plot to see an in-depth analysis</p>
+        <!-- Row -->
+        <div class="row">
+          <div class="col-sm-6 comparisonBoxes"> 
+            <h3>vs. Max Temperature</h3>
+              <a href="visualizations/max-temperature.html"><img class="viz-box" src="images/Latitude vs Temperature By City.png" width="250px"></a>
+          </div>
+          <div class="col-sm-5 comparisonBoxes"> 
+            <h3>vs. Humidity</h3>
+          <a href="visualizations/humidity.html"><img class="viz-box" src="images/Latitude vs Humidity By City.png" width="250px"></a>
+          </div>
+        </div>
+        <!-- end row -->
+        <div class="row">
+          <div class="col-sm-6 comparisonBoxes"> 
+            <h3>vs. Cloudiness</h3>
+              <a href="visualizations/cloudiness.html"><img class="viz-box" src="images/Latitude vs Cloudiness By City.png" width="250px"></a>
+          </div>
+          <div class="col-sm-5 comparisonBoxes"> 
+            <h3>vs. Wind Speed</h3>
+          <a href="visualizations/windspeed.html"><img class="viz-box" src="images/Latitude vs Wind Speed By City.png" width="250px"></a>
+          </div>
+        </div>
+        <!-- end row -->
+          </span>
+        </div>
     </div>
     <!-- END BOX #1 -->
-    <div class="col-sm-4 text-left chris-container"> 
-      <h1 style="color:#49796B;"><strong>Visualizations</strong></h1>
-        <div class="visualization-boxes">
-          <a href="visualizations/max-temperature.html"><img class="viz-box" src="images/Latitude vs Temperature By City.png" width="125px"></a>
-          <a href="visualizations/humidity.html"><img class="viz-box" src="images/Latitude vs Humidity By City.png" width="125px"></a>
-          <a href="visualizations/cloudiness.html"><img class="viz-box" src="images/Latitude vs Cloudiness By City.png" width="125px"></a>
-          <a href="visualizations/windspeed.html"><img class="viz-box" src="images/Latitude vs Wind Speed By City.png" width="125px"></a>
-        </div>
-        <br>
-        <br>
-    </div>
-    <!-- END BOX #2 -->
+    
   </div>
 </div>
 

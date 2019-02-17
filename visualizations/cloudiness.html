@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Web Dashboard</title>
+  <title>Latitude vs Cloudiness</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -75,21 +75,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.html">Dashboard</a>
+      <a class="navbar-brand" href="../index.html">Dashboard</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
+         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="visualizations/max-temperature.html">Max Temperature</a></li>
-            <li><a href="visualizations/humidity.html">Humidity</a></li>
-            <li><a href="visualizations/cloudiness.html">Cloudiness</a></li>
-            <li><a href="visualizations/windspeed.html">Wind Speed</a></li>
+            <li><a href="max-temperature.html">Max Temperature</a></li>
+            <li><a href="humidity.html">Humidity</a></li>
+            <li><a href="cloudiness.html">Cloudiness</a></li>
+            <li><a href="windspeed.html">Wind Speed</a></li>
           </ul>
         </li>
-        <li><a href="comparisons.html">Comparison</a></li>
-        <li><a href="data.html">Data</a></li>
+        <li><a href="../comparisons.html">Comparison</a></li>
+        <li><a href="../data.html">Data</a></li>
       </ul>
     </div>
   </div>
@@ -99,21 +99,21 @@
 <div class="container-fluid">    
   <div class="row content">
     <div class="col-sm-7 text-left chris-container"> 
-      <h1 style="color:#49796B;"><strong>Summary: Latitude vs X</strong></h1>
-      <img style="float: left; margin:5px;"src="images/Latitude vs Temperature By City.png" width="125px">
-      <p> The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a data set of over 500 cities.<br><br>
-
-        After assembling the dataset, we used Matplotlib to plot various aspects of hte weather vs latitude. Factors that we looked at included: temperature, cloudiness, wind speed, adn humidity. This site provides the source data & visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+      <h1 style="color:#49796B;"><strong>Latitude vs. Cloudiness</strong></h1>
+      <div class="main-viz-image" style="text-align:center">
+        <img src="../images/Latitude vs Cloudiness By City.png" width="80%">
+      </div>
+      <p>Description: at the time of sampling, cloudiness does not seem to be correlated with latitude</p>
       
     </div>
     <!-- END BOX #1 -->
     <div class="col-sm-4 text-left chris-container"> 
       <h1 style="color:#49796B;"><strong>Visualizations</strong></h1>
         <div class="visualization-boxes">
-          <a href="visualizations/max-temperature.html"><img class="viz-box" src="images/Latitude vs Temperature By City.png" width="125px"></a>
-          <a href="visualizations/humidity.html"><img class="viz-box" src="images/Latitude vs Humidity By City.png" width="125px"></a>
-          <a href="visualizations/cloudiness.html"><img class="viz-box" src="images/Latitude vs Cloudiness By City.png" width="125px"></a>
-          <a href="visualizations/windspeed.html"><img class="viz-box" src="images/Latitude vs Wind Speed By City.png" width="125px"></a>
+          <a href="max-temperature.html"><img class="viz-box" src="../images/Latitude vs Temperature By City.png" width="125px"></a>
+          <a href="humidity.html"><img class="viz-box" src="../images/Latitude vs Humidity By City.png" width="125px"></a>
+          <a href="cloudiness.html"><img class="viz-box" src="../images/Latitude vs Cloudiness By City.png" width="125px"></a>
+          <a href="windspeed.html"><img class="viz-box" src="../images/Latitude vs Wind Speed By City.png" width="125px"></a>
         </div>
         <br>
         <br>
